@@ -16,45 +16,178 @@
   </head>
   <body>
     <header>
-      <img src="imgs/logo.png" />
+      <img src="imgs/logo.png" alt="Lucky Shrub logo" />
     </header>
     <nav>
       <ul>
-        <li><a href="#index">home</a></li>
-        <li><a href="#services">services</a></li>
-        <li><a href="#contact">contact</a></li>
-        <li><a href="#about">about</a></li>
+        <li>
+          <a href="#index"><img src="imgs/home.png" alt="home icon" />home</a>
+        </li>
+        <li>
+          <a href="#services"
+            ><img src="imgs/services.png" alt="services icon" />services</a
+          >
+        </li>
+        <li>
+          <a href="#contact"
+            ><img src="imgs/contact.png" alt="contact icon" />contact</a
+          >
+        </li>
+        <li>
+          <a href="#about"
+            ><img src="imgs/about.png" alt="about icon" />about</a
+          >
+        </li>
       </ul>
     </nav>
     <main>
       <section id="index">
         <article>
           <h2>Transform any space into an oasis you can be proud of.</h2>
-        </article>
-      </section>
-      <section id="services">
-        <h2>services</h2>
-        <article>
-          <div>
-            <p>landscaping</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+          <div id="banner-buttons">
+            <button id="about-button">about</button>
+            <button id="services-button">services</button>
           </div>
         </article>
       </section>
-      <section id="contact"></section>
-      <section id="about"></section>
+      <section id="services" class="content">
+        <div class="title">
+          <span
+            ><img src="imgs/services.png" alt="services title icon" />
+            <h3>services</h3></span
+          >
+        </div>
+        <article>
+          <div class="service">
+            <div class="service-img">
+              <img src="imgs/landscaping.jpg" alt="Landscaping image" />
+            </div>
+            <div class="service-text">
+              <span>
+                <img src="imgs/flower.png" alt="flower icon" />
+                <p>landscaping</p></span
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-img">
+              <img src="imgs/garden.jpg" alt="Garden design image" />
+            </div>
+            <div class="service-text">
+              <span
+                ><img src="imgs/forest.png" alt="forest icon" />
+                <p>garden design</p></span
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-img">
+              <img src="imgs/maintenance.jpg" alt="Garden Maintenance image" />
+            </div>
+            <div class="service-text">
+              <span
+                ><img src="imgs/bug.png" alt="bug icon" />
+                <p>maintenance</p></span
+              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="contact" class="content">
+        <div class="title">
+          <span
+            ><img src="imgs/contact.png" alt="contact title icon" />
+            <h3>contact</h3></span
+          >
+        </div>
+        <div class="contact-form">
+          <div id="form-title">
+            <img src="imgs/message.png" alt="flower message icon" />
+            <p>send us a message</p>
+          </div>
+          <div id="form-content">
+            <form>
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email"
+                  required
+                />
+                <input
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="message"
+                  maxlength="300"
+                />
+              </div>
+              <div>
+                <button type="submit">
+                  <img src="imgs/send.png" alt="send icon" />
+                  <p>send</p>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="content">
+        <div class="title">
+          <span
+            ><img src="imgs/about.png" alt="about title icon" />
+            <h3>about</h3></span
+          >
+        </div>
+        <div id="about-content">
+          <img src="imgs/couple.jpg" alt="Couple in a garden" />
+          <div id="content-text">
+            <img src="imgs/logo-vertical.png" alt="vertical logo" />
+            <p>
+              Based in Tuscon, Arizona, Lucky Shrub was started by a husband and
+              wife team, Jason and Maria, who share a long-time love for plants.
+              Jason is the garden architect. He creates and oversees all designs
+              while managing his team of landscapers. Maria manages all the
+              marketing for the company and oversees the nursery.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <div><img src="imgs/logo.png" /></div>
-      <div>
-        <p>© Lucky Shrub</p>
-        <p>Created for Coursera</p>
-        <p>Developed by Britanny B.</p>
+      <div id="footer-content">
+        <div id="company">
+          <img src="imgs/logo.png" alt="Lucky Shrub logo" />
+          <p>© Lucky Shrub</p>
+        </div>
+        <div id="content-info">
+          <div id="developer">
+            <div><img src="imgs/icons.png" alt="icons icon" /></div>
+            <div>
+              <p>Created for Coursera</p>
+              <p>Developed by Britanny B.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

@@ -1,59 +1,498 @@
-.momo-sig {
-  font-family: "Momo Signature", cursive;
-  font-weight: 400;
-  font-style: normal;
+:root {
+  --teal: #257b75;
+  --orange: #d65e2e;
 }
 
-.moderustic-reg {
-  font-family: "Moderustic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.moderustic-med {
-  font-family: "Moderustic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.moderustic-bold {
-  font-family: "Moderustic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family:
-    "Moderustic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
   background-color: #f1f1f1;
+  font-family:
+    "Moderustic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  min-width: 320px;
 }
 
 img {
+  display: block;
   margin: auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+header {
+  background-color: var(--teal);
+  padding: 20px;
+}
+
+header img {
+  max-width: 300px;
 }
 
 nav ul {
   list-style: none;
   text-align: center;
+  padding: 18px 0;
 }
 
 nav li {
   display: inline-block;
+  margin-right: 100px;
 }
 
-section {
+nav li:last-of-type {
+  margin-right: 0px;
+}
+
+nav li a {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--teal);
+  transition: ease-in-out 0.2s;
+}
+
+nav li a:hover {
+  font-size: 24px;
+  text-decoration: underline dashed;
+  color: var(--teal);
+}
+
+nav li a img {
+  width: 40px;
+  margin-right: 6px;
+}
+
+#index {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imgs/greenhouse.jpg");
+
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#index article {
+  color: white;
+  width: 100%;
+  max-width: 900px;
+}
+
+#index article h2 {
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 60px;
+  text-align: center;
+}
+
+button {
+  border: none;
+  color: white;
+  background: none;
+  background-color: transparent;
+  padding: 12px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  transition: ease-in-out 0.4s;
+}
+
+#banner-buttons {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-button {
+  background-color: white;
+  border: 4px solid white;
+  color: black;
+  border-radius: 100px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 180px;
+  padding-right: 60px;
+}
+
+#about-button:hover {
+  background-color: var(--teal);
+  color: white;
+}
+
+#services-button {
+  border: 4px solid white;
+  border-radius: 100px;
+  border-top-left-radius: 180px;
+  border-bottom-left-radius: 0;
+}
+
+#services-button:hover {
+  background-color: var(--teal);
+}
+
+.content {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#services {
+  margin-top: 100px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.title h3 {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+  color: var(--teal);
+  text-align: left;
+}
+
+.title img {
+  display: inline;
+  max-width: 60px;
+  margin: 0 8px 0 0;
+}
+
+#services article {
+  display: flex;
+}
+
+#services article .service {
+  flex: 1;
+}
+
+.service-img {
+  width: calc(90% + 24px);
+}
+
+.service-img img {
+  border-radius: 60px 60px 0 0;
+}
+
+.service-text {
+  width: 90%;
+  background-color: var(--orange);
+  color: white;
+  padding: 20px 12px;
+  border-radius: 0 0 60px 60px;
+}
+
+.service-text p {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.service-text span {
+  margin-bottom: 10px;
+}
+
+.service-text span img {
+  max-width: 30px;
+}
+
+.service-text span p {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#form-title {
+  background-color: var(--teal);
+  width: 20%;
+  color: white;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px 0 0 60px;
+}
+
+#form-title p {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#form-title img {
+  max-width: 80px;
+  margin: 0 0 10px;
+}
+
+#form-content {
+  padding: 20px;
+  border: var(--teal) 4px solid;
+  border-radius: 0 60px 60px 0;
+  height: 232px;
+}
+
+.contact-form {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.contact-form form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: var(--orange) 2px solid;
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--orange);
+  font-size: 16px;
+}
+
+#message {
+  padding-bottom: 70px;
+}
+
+.contact-form form button {
+  background-color: #b53434;
+  border-radius: 0 40px 40px 0;
+}
+
+.contact-form form button:hover {
+  background-color: #7f2020;
+}
+
+#form-content form {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+#about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-content img {
+  border-radius: 60px 0 0 60px;
+  height: 400px;
+  object-fit: cover;
+}
+
+#content-text {
+  height: 400px;
+  background-color: var(--teal);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 60px 60px 0;
+  padding: 0 26px;
+}
+
+#content-text img {
+  max-width: 140px;
+  height: auto;
+  margin: 0 40px 0 20px;
+  border-radius: 0;
 }
 
 footer {
+  background-color: #454549;
+  padding: 20px 0;
+}
+
+#footer-content {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+}
+
+#footer-content img {
+  max-width: 200px;
+}
+
+#content-info {
+  align-self: right;
+}
+
+#content-info img {
+  max-width: 40px;
+}
+
+#company {
+  text-align: center;
+}
+
+#developer {
+  display: flex;
+  column-gap: 10px;
+}
+
+@media only screen and (max-width: 1480px) {
+  .content,
+  #footer-content {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .content,
+  #footer-content {
+    max-width: 1000px;
+  }
+
+  #content-text img {
+    max-width: 90px;
+    margin: 0 20px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  header img {
+    max-width: 200px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav li {
+    display: block;
+    margin: 5px auto;
+  }
+
+  nav li:last-of-type {
+    margin-right: auto;
+  }
+
+  nav li a {
+    font-size: 16px;
+  }
+
+  nav li a:hover {
+    font-size: 18px;
+  }
+
+  nav li a img {
+    width: 20px;
+    margin-right: 6px;
+  }
+
+  #index article h2 {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
+  #banner-buttons {
+    margin: 30px auto;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .content,
+  #footer-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #services article,
+  .contact-form,
+  #about-content,
+  #footer-content {
+    flex-direction: column;
+  }
+
+  .service-img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .service-text {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .form-title,
+  .form-content,
+  #about-content,
+  #footer-content {
+    width: 100%;
+    height: unset;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  #company {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #banner-buttons {
+    flex-direction: column;
+    margin: 30px auto;
+  }
+
+  .content,
+  #footer-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
