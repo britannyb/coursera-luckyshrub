@@ -367,10 +367,6 @@ footer {
   max-width: 40px;
 }
 
-#company {
-  text-align: center;
-}
-
 #developer {
   display: flex;
   column-gap: 10px;
@@ -518,6 +514,10 @@ footer {
 
   #company {
     margin-bottom: 20px;
+  }
+
+  br + p {
+    text-align: center;
   }
 
   #about-content img {
