@@ -589,4 +589,8 @@ footer {
   .service-text {
     width: 90%;
   }
+
+  #form-content form {
+    padding: 0 10px;
+  }
 }
