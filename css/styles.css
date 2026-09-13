@@ -593,4 +593,20 @@ footer {
   #form-content form {
     padding: 0 10px;
   }
+
+  #form-title {
+    border-radius: 0;
+  }
+
+  #form-content {
+    border-radius: 0;
+  }
+
+  #about-content img {
+    border-radius: 0;
+  }
+
+  #content-text {
+    border-radius: 0;
+  }
 }
