@@ -550,8 +550,16 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-  nav ul {
+  nav ul li a {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav li a img {
+    margin: unset;
+    width: 30px;
   }
 
   .title h3 {
@@ -592,6 +600,10 @@ footer {
 
   #form-content form {
     padding: 0 10px;
+  }
+
+  #about {
+    margin-bottom: 0;
   }
 
   #form-title {
